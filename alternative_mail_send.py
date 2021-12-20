@@ -15,4 +15,3 @@ with smtplib.SMTP("smtp.gmail.com", port=587) as smtp:
     smtp.starttls(context=context)
     smtp.login(msg["From"], my_password)
     smtp.send_message(msg)
-
